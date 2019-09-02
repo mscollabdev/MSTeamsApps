@@ -1,0 +1,61 @@
+{
+	"$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.3/MicrosoftTeams.schema.json",
+	"manifestVersion": "1.3",
+	"version": "1.0.0",
+	"id": "34649a73-0baf-4305-9f3f-7612b757d53f",
+	"packageName": "dev.teams.com.apps",
+	"developer": {
+		"name": "Office Developer",
+		"websiteUrl": "https://www.teams.com",
+		"privacyUrl": "https://www.teams.com/privacy",
+		"termsOfUseUrl": "https://www.teams.com/termsofuse"
+	},
+	"icons": {
+		"color": "bot-icon-color-192x192.png",
+		"outline": "bot-icon-outline-32x32.png"
+	},
+	"name": {
+		"short": "officedev-talent-bot ",
+		"full": "Talent Management Bot - OfficeDev"
+	},
+	"description": {
+		"short": "Training Content module 2019-02",
+		"full": "Demonstration bot for the Training Content repository"
+	},
+	"accentColor": "#0EA20E",
+	"bots": [
+		{
+			"botId": "34649a73-0baf-4305-9f3f-7612b757d53f",
+			"supportsFiles": true,
+			"scopes": [
+				"personal",
+				"team"
+			]
+		}
+	],
+	"composeExtensions": [
+		{
+			"botId": "34649a73-0baf-4305-9f3f-7612b757d53f",
+			"commands": [
+				{
+					"id": "searchPositions",
+					"title": "Search positions",
+					"initialRun": true,
+					"description": "Search open positions by keyword",
+					"parameters": [
+						{
+							"name": "keyword",
+							"title": "Keywords",
+							"description": "Position keywords"
+						}
+					]
+				}
+			]
+		}
+	],
+	"permissions": [
+		"identity",
+		"messageTeamMembers"
+	],
+	"validDomains": []
+}
